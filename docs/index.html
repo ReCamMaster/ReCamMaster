@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="ReCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints">
+  <meta property="og:title" content="ReCamMaster" />
+  <meta property="og:description" content="Re-capture your videos!" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="pics/icon.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="ReCamMaster">
+  <meta name="twitter:description" content="Re-capture your videos!">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="pics/icon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>ReCamMaster: Camera-Controlled Generative Rendering from A Single Video</title>
+  <link rel="icon" type="image/x-icon" href="pics/icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-2 publication-title">ReCamMaster: Camera-Controlled Generative Rendering from A Single Video</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                Anonymous submission</span>
+            </div>
+            <br>
+            <h2 class="subtitle has-text-justified">
+              <b>Friendly Reminder:</b> If the videos are loading slowly, you can download this page from our <i>supplementary materials</i> and view it locally by double-clicking the "index.html" file.
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- <p class="prompt_single_vid"> -->
+  <section class="hero is-small" style="margin-top: -50px;">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <br>
+            <h2 class="title is-2">Demos</h2>
+            <h1 class="title is-5 has-text-centered">Arc Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/arc1_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Translation Up Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/translation up_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Translation Down Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/translation down_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Pan Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/pan_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Tilt Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/tilt_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Zoom in / Zoom out Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/zoomin_zoomout_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <h1 class="title is-5 has-text-centered">Random Trajectories</h1>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/random_traj_concat1_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/random_traj_concat2_compressed.mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+  </section>
+
+  <br>
+  <br>
+
+  <section class="hero teaser is-light" style="margin-top: -50px;">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <br>
+            <h2 class="title is-2">Application: Video Stabilization</h2>
+            <div class="columns is-centered has-text-justified my_link">
+              <td colspan="3">
+                <p>
+                  For amateur videographers or when shooting with a handheld camera, obtaining stable video is challenging. Video stabilization techniques aim to smooth out camera movements to produce easy-to-watch videos, which can be achieved by inputting smooth camera trajectories into ReCamMaster. To verify this, we used unsteady videos from the <a href="https://github.com/cxjyxxme/deep-online-video-stabilization-deploy">DeepStab</a> dataset (consisting of unsteady videos collected via handheld hardware) as input to the model and obtained stable videos as output. It can be observed that the model stabilizes the video while preserving the scenes and actions from the original video.
+                </p>
+                
+              </td>
+            </div>
+            <br>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/stabilization1_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ReCamMaster/stabilization2_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-2">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Camera control has been actively studied in text or image conditioned video generation tasks. However, altering camera trajectories of a given video remains under-explored, despite its importance in the field of video creation. This is non-trivial because it induces extra constraints of maintaining multiple-frame appearance and dynamic synchronization. To address this, we present ReCamMaster, a camera-controlled generative video re-rendering framework that reproduces the dynamic scene of an input video at novel camera trajectories. The core innovation lies in harnessing the generative capabilities of pre-trained text-to-video models through a thoroughly explored video conditioning mechanism. Considering the scarcity of qualified training data, we constructed a large-scale multi-camera synchronized video dataset using Unreal Engine 5, which is carefully curated to follow real-world filming characteristics, covering diverse scenes and camera movements. It helps the generalization of trained models to in-the-wild videos. Lastly, we further improve the robustness to diverse input through a meticulously designed training strategy. Extensive experiments tell that our method substantially outperforms existing state-of-the-art approaches and strong baselines. Our method also finds promising applications in video stabilization, super-resolution, and outpainting. Our code and dataset will be publicly available.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+  <!-- Paper poster -->
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-">
+            <h2 class="title is-2">Method</h2>
+            <div class="content has-text-justified">
+              <td colspan="3">
+                <p>
+                  To re-shoot a source video with novel camera trajectories, we propose to harness the generative capability of pre-trained text-to-video diffusion models by imposing dual conditions, i.e. the source video and target camera trajectories through a meticulously designed framework. The overview of the model is depicted below.
+                </p>
+              </td>
+            </div>
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <img src="pics/fig_pipe.png" width="100%" />
+              </td>
+            </div>
+            <div class="content has-text-justified my_link">
+              <td colspan="3">
+                <p>
+                  <i>Left:</i> The training pipeline of ReCamMaster. A latent diffusion model is optimized to reconstruct the target video <i>V<sub>t</sub> </i>, conditioned on the source video <i>V<sub>s</sub> </i>, target camera pose <i>cam<sub>t</sub> </i>, and target prompt <i>p<sub>t</sub> </i>. <i>Right:</i> Comparison of different video condition techniques. (a) Frame-dimension conditioning used in our paper; (b) Channel-dimension conditioning used in baseline methods <a href="#ref-gcd">[1]</a>, <a href="#ref-gs-dit">[2]</a>; (c) View-dimension conditioning in <a href="#ref-syncammaster">[3]</a>.
+                </p>
+              </td>
+            </div>
+            <p><br></p>
+          </div>
+  </section>
+  <!--End paper poster -->
+
+
+  <!-- Video grid single ref -->
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <h2 class="title is-2">Comparisons</h2>
+
+            <div class="content has-text-justified my_link">
+              <td colspan="3">
+                <p>
+                  We compare the proposed ReCamMaster with state-of-the-art camera-controlled video-to-video generation methods including GCD <a href="#ref-gcd">[1]</a>, Trajectory-Attention <a href="#ref-trajattn">[4]</a>, and DaS <a href="#ref-das">[5]</a>. We have also uploaded the comparison results on 1000 randomly selected videos from WebVid-10M at this <a href="https://github.com/ReCamMaster/ReCamMaster-WebVid-Results">anonymous link</a>.
+                </p>
+                <!-- <p><br></p> -->
+              </td>
+              
+
+
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/comparison/compare with baseline_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+        </div>
+  </section>
+  
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <h2 class="title is-2">Ablation on Video Conditioning Machanisms</h2>
+
+            <div class="content has-text-justified my_link">
+              <td colspan="3">
+                <p>
+                  In our paper, we propose a novel video conditioning scheme that concatenates the tokens of a source video with the target video tokens along the frame dimension. To verify the effectiveness, we compared the "channel concatenation" technique used in baseline methods <a href="#ref-gcd">[1]</a>, <a href="#ref-gs-dit">[2]</a> with the "view concatenation" technique from <a href="#ref-syncammaster">[3]</a>. It is evident that the designed conditioning technique significantly enhances the model's performance.
+                </p>
+                <!-- <p><br></p> -->
+              </td>
+              
+
+
+            <div class="columns is-centered has-text-justified">
+              <td colspan="3">
+                <video muted autoplay="autoplay" loop="loop" width="100%" preload controls>
+                  <source src="./videos/ablation/ablation_on_video_conditioning_compressed.mp4" type="video/mp4">
+                </video>
+              </td>
+            </div>
+            <p><br></p>
+        </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column custom-width">
+            <!-- <h2 class="title is-2"></h2> -->
+            <div class="content has-text-justified" style="margin-top: -50px;">
+              
+              <b>Reference:</b> <br>
+                <a name="ref-gcd" id="ref-gcd"></a>
+                [1] Van Hoorick, Basile, et al. "Generative camera dolly: Extreme monocular dynamic novel view synthesis." European Conference on Computer Vision. Cham: Springer Nature Switzerland, 2024.<br>
+                <a name="ref-gs-dit" id="ref-gs-dit"></a>
+                [2] Bian, Weikang, et al. "GS-DiT: Advancing Video Generation with Pseudo 4D Gaussian Fields through Efficient Dense 3D Point Tracking." arXiv preprint arXiv:2501.02690 (2025).<br>
+                <a name="ref-syncammaster" id="ref-syncammaster"></a>
+                [3] Bai, Jianhong, et al. "SynCamMaster: Synchronizing Multi-Camera Video Generation from Diverse Viewpoints." arXiv preprint arXiv:2412.07760 (2024).<br>
+                <a name="ref-trajattn" id="ref-trajattn"></a>
+                [4] Zeqi Xiao, et al. "Trajectory attention for fine-grained video motion control." The Thirteenth International Conference on Learning Representations, 2025.<br>
+                <a name="ref-das" id="ref-das"></a>
+                [5] Gu, Zekai, et al. "Diffusion as Shader: 3D-aware Video Diffusion for Versatile Video Generation Control." arXiv preprint arXiv:2501.03847 (2025).<br>
+                <br>
+                <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- Statcounter tracking code -->
+
+      <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+      <!-- End of Statcounter Code -->
+      <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+          const videoWrappers = document.querySelectorAll('.video-wrapper');
+
+          videoWrappers.forEach(wrapper => {
+            const defaultVideo = wrapper.querySelector('.default-video');
+            const aspectRatio = defaultVideo.videoWidth / defaultVideo.videoHeight;
+            const height = wrapper.offsetWidth / aspectRatio;
+
+            wrapper.style.height = `${height}px`;
+
+            wrapper.addEventListener('mouseenter', () => {
+              defaultVideo.pause();
+              hoverVideo.play();
+            });
+
+            wrapper.addEventListener('mouseleave', () => {
+              defaultVideo.play();
+              hoverVideo.pause();
+            });
+          });
+        });
+        $(document).ready(function () {
+          var carouselItems = $('.carousel .item');
+          var numItems = carouselItems.length;
+          var numVideos = 5;
+          var currentIndex = 0;
+
+          $('.carousel').on('click', function () {
+            currentIndex++;
+            if (currentIndex + numVideos <= numItems) {
+              carouselItems.removeClass('active');
+              carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+            } else {
+              currentIndex = 0;
+              carouselItems.removeClass('active');
+              carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+            }
+          });
+
+          carouselItems.slice(currentIndex, currentIndex + numVideos).addClass('active');
+        });
+      </script>
+    </div>
+  
+</body>
+
+</html>
